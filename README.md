@@ -8,7 +8,7 @@ Usando um banco de dados com Knex.JS
 
 Knex.JS <br/>
 MySQL  <br/>
-Docket  <br/>
+Docker  <br/>
 
 ## 📝 Licença
 
