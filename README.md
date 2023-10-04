@@ -6,9 +6,9 @@ Usando um banco de dados com Knex.JS
 
 ## 💻 Tecnologias Usadas
 
-Knex.JS
-MySQL
-Docket
+Knex.JS <br/>
+MySQL  <br/>
+Docket  <br/>
 
 ## 📝 Licença
 
