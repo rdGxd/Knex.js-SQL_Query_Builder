@@ -10,9 +10,8 @@ services:
       - --character-set-server=utf8mb4
       - --collation-server=utf8mb4_unicode_ci
       - --innodb_force_recovery=0
-      - --default_time_zone=America/Sao_Paulo
     volumes:
-      - C:\Users\rodri\Documents\GitHub\Bases-de-dados-Relacionais--SQL-MySQL-MariaDB\Dados:/var/lib/mysql
+      - C:\Users\rodri\Documents\GitHub\Knex.js-SQL_Query_Builder\Dados:/var/lib/mysql
     ports:
       - 3306:3306
     environment:
