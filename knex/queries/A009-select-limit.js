@@ -9,16 +9,15 @@ limit 9,3;
 */
 
 const knex = require("../config/database.js");
-const selectOrder = knex("users")
+const selectLimit = knex("users")
   .select("id", "first_name")
-  .where("first_name", "like", "___")
-  .orWhere("first_name", "like", "%na")
-  .orderBy("id", "desc")
-  .orderBy("first_name", "asc");
+  .orderBy("id", "asc")
+  .limit(5)
+  .offset(10);
 
-console.log(selectOrder.toString());
+console.log(selectLimit.toString());
 
-selectOrder
+selectLimit
   .then((data) => {
     console.log(data);
   })
