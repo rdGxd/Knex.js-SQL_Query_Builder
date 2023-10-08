@@ -7,14 +7,14 @@ where first_name like '%ma%_';
 */
 
 const knex = require("../config/database.js");
-const selectBetween = knex("users")
+const selectLike = knex("users")
   .select("id", "first_name")
-  .whereBetween("id", [80, 83])
-  .orWhereBetween('first_name', [10, 15]);
+  .where("first_name", "like", "___")
+  .orWhere("first_name", "like", "%na");
 
-console.log(selectBetween.toString());
+console.log(selectLike.toString());
 
-selectBetween
+selectLike
   .then((data) => {
     console.log(data);
   })
