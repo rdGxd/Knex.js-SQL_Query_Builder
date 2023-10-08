@@ -10,8 +10,8 @@ const knex = require("../config/database.js");
 const select = knex("users")
   .select("id", "first_name")
   .where("id", "=", 1)
-  .andWhere("first_name", "=", "Rosana" )
-  .orWhere("id", "=", 4)
+  .andWhere("first_name", "=", "Rosana")
+  .orWhere("id", "=", 4);
 
 console.log(select.toString());
 

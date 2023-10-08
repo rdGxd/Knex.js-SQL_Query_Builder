@@ -17,7 +17,7 @@ select
     }
   })
   .catch((e) => {
-    console.log(e.message);
+    console.log(`ERRO: ${e.message}`)
   })
   .finally(() => {
     knex.destroy();
